@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume builder</title>
+    <link rel="stylesheet" href="res.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.2.2/pdfmake.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.2.2/vfs_fonts.js"></script>
+
+      
+</head>
+<body>
+    <form  id="resumeForm">
+        <h2>Professional Experience</h2>
+        <div class="form-group">
+          <label for="company1">Company 1</label>
+          <input type="text" id="company1" name="company1" required>
+        </div>
+        <div class="form-group">
+          <label for="jobTitle1">Job Title</label>
+          <input type="text" id="jobTitle1" name="jobTitle1" required>
+        </div>
+        <div class="form-group">
+          <label for="date1">Date Range</label>
+          <input type="text" id="date1" name="date1" required>
+        </div>
+        <div class="form-group">
+          <label for="responsibility1">Responsibilities</label>
+          <textarea id="responsibility1" name="responsibility1" required></textarea>
+        </div>
+        
+        <h2>Focus Solutions</h2>
+        <div class="form-group">
+          <label for="solution1">Solution 1</label>
+          <input type="text" id="solution1" name="solution1" required>
+        </div>
+        <div class="form-group">
+          <label for="solutionDescription1">Solution Description</label>
+          <textarea id="solutionDescription1" name="solutionDescription1" required></textarea>
+        </div>
+        
+        <h2>Education</h2>
+        <div class="form-group">
+          <label for="university1">University 1</label>
+          <input type="text" id="university1" name="university1" required>
+        </div>
+        <div class="form-group">
+          <label for="degree1">Degree</label>
+          <input type="text" id="degree1" name="degree1" required>
+        </div>
+        <div class="form-group">
+          <label for="date2">Date Range</label>
+          <input type="text" id="date2" name="date2" required>
+        </div>
+        
+        <h2>Additional Skills</h2>
+        <div class="form-group">
+          <label for="skill1">Skill 1</label>
+          <input type="text" id="skill1" name="skill1" required>
+        </div>
+        <div class="form-group">
+          <label for="skill2">Skill 2</label>
+          <input type="text" id="skill2" name="skill2" required>
+        </div>
+        <div class="form-group">
+          <label for="skill3">Skill 3</label>
+          <input type="text" id="skill3" name="skill3" required>
+        </div>
+        
+        <button type="submit" onclick="generatePDF()">Generate PDF</button>
+      </form>
+      <script src="res.js"></script> 
+</body>
+</html>
